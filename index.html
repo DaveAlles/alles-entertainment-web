@@ -5,15 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alles Entertainment — Independent Game Studio</title>
   <meta name="description" content="Alles Entertainment LLC is an independent game studio in Seattle, Washington, founded by Dave and Jill Alles.">
+  <meta name="theme-color" content="#0A0A0A">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:site_name" content="Alles Entertainment">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alles Entertainment — Independent Game Studio">
+  <meta property="og:description" content="Independent games built around strong ideas, simple interactions, and fun that survives the scoreboard.">
+  <meta property="og:url" content="https://www.alles-entertainment.com/">
   <link rel="stylesheet" href="/assets/styles.css">
 </head>
-<body>
+<body class="home">
   <header class="site-header">
     <div class="shell nav">
       <a class="brand" href="/" aria-label="Alles Entertainment home">
-        <span class="brand-mark">A</span>
-        <span class="brand-type"><span>Alles</span><span>Entertainment</span></span>
+        <img class="brand-logo" src="/assets/alles-logo-header-dark.svg" alt="Alles Entertainment">
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="/misattribution/">MisAttribution</a>
@@ -25,10 +30,13 @@
 
   <main>
     <section class="hero">
-      <div class="shell">
-        <p class="eyebrow">Independent game studio · Seattle</p>
-        <h1>Play should stay fun.</h1>
-        <p class="hero-copy">Alles Entertainment makes games built around strong ideas, simple interactions, and one standard we care about deeply: the fun shouldn't disappear just because you lose.</p>
+      <div class="shell hero-grid">
+        <div>
+          <p class="eyebrow">Independent game studio · Seattle</p>
+          <h1>Play should stay fun.</h1>
+          <p class="hero-copy">Alles Entertainment makes games built around strong ideas, simple interactions, and one standard we care about deeply: the fun shouldn't disappear just because you lose.</p>
+        </div>
+        <img class="hero-brand-mark" src="/assets/alles-mark-red.svg" alt="" aria-hidden="true">
       </div>
     </section>
 
@@ -63,7 +71,7 @@
 
   <footer class="site-footer">
     <div class="shell footer-inner">
-      <span>© 2026 Alles Entertainment LLC. All rights reserved.</span>
+      <div class="footer-identity"><img class="footer-mark" src="/assets/alles-mark-red.svg" alt=""><span>© 2026 Alles Entertainment LLC. All rights reserved.</span></div>
       <div class="footer-links"><a href="/privacy/">Privacy</a><a href="/contact/">Contact</a></div>
     </div>
   </footer>
