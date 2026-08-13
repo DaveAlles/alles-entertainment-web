@@ -1,0 +1,140 @@
+:root {
+  --brand-red: #e50914;
+  --brand-black: #0a0a0a;
+  --brand-white: #ffffff;
+}
+
+.site-header {
+  background: var(--brand-black);
+  border-bottom-color: #242428;
+}
+
+.nav {
+  min-height: 96px;
+  gap: 34px;
+}
+
+.brand {
+  flex: 0 0 auto;
+}
+
+.brand-logo {
+  display: block;
+  width: clamp(210px, 22vw, 250px);
+  height: auto;
+}
+
+.nav-links {
+  gap: 30px;
+}
+
+.nav-links a {
+  position: relative;
+  padding: 8px 0;
+  color: #aaaab0;
+  transition: color 160ms ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  height: 2px;
+  background: var(--brand-red);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 160ms ease;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: var(--brand-white);
+}
+
+.nav-links a:hover::after,
+.nav-links a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+.hero {
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 330px);
+  gap: clamp(48px, 7vw, 100px);
+  align-items: center;
+}
+
+.hero-brand-mark {
+  width: min(100%, 330px);
+  justify-self: end;
+  filter: drop-shadow(0 22px 34px rgba(17, 18, 20, .08));
+}
+
+.eyebrow {
+  color: var(--brand-red);
+}
+
+.text-link::after {
+  color: var(--brand-red);
+}
+
+.contact-link {
+  text-decoration-color: var(--brand-red);
+}
+
+.site-footer {
+  background: var(--brand-black);
+  border-top-color: #242428;
+  color: #9f9fa5;
+}
+
+.footer-identity {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.footer-mark {
+  width: 34px;
+  height: 34px;
+  display: block;
+}
+
+.footer-links a:hover {
+  color: var(--brand-white);
+}
+
+@media (max-width: 760px) {
+  .nav {
+    min-height: 82px;
+    gap: 18px;
+  }
+
+  .brand-logo {
+    width: 172px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-brand-mark {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .brand-logo {
+    width: 150px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 12px;
+  }
+}

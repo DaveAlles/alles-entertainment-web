@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#f7f6f2"/>
-  <rect x="7.5" y="7.5" width="49" height="49" fill="none" stroke="#111214"/>
-  <text x="32" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="31" fill="#111214">A</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><rect x="0" y="0" width="1000" height="1000" rx="190" fill="#0A0A0A"/><g transform="translate(85 85) scale(0.83)"><path d="M 506.667 105 L 100 895 L 243.333 895 L 443.333 611.667 L 380 601.667 L 583.333 318.333 L 503.333 551.667 L 593.333 565 L 460 748.333 L 660 751.667 L 743.333 895 L 900 895 Z" fill="#E50914"/></g></svg>
