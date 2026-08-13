@@ -32,7 +32,7 @@ After enabling Pages and configuring DNS, enable HTTPS in GitHub Pages settings.
 
 ## Before public launch
 
-1. Make sure `hello@alles-entertain.com` exists and can receive mail.
+1. Make sure `hello@alles-entertainment.com` exists and can receive mail.
 2. Review the public copy.
 3. Enable GitHub Pages for the repository.
 4. Point Squarespace DNS to GitHub Pages and configure the custom domain.
