@@ -26,7 +26,7 @@ Then open `http://localhost:8080`.
 
 This repository is designed to be published directly from the `main` branch root using GitHub Pages. The included `CNAME` file sets the intended custom domain to:
 
-`www.alles-entertain.com`
+`www.alles-entertainment.com`
 
 After enabling Pages and configuring DNS, enable HTTPS in GitHub Pages settings.
 
