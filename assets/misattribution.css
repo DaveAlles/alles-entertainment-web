@@ -1,20 +1,31 @@
 /* MisAttribution product identity */
+
+/* Keep the studio landing page airy, but bring the first project into view sooner. */
+.hero {
+  min-height: 58vh;
+  padding-top: clamp(78px, 10vw, 130px);
+  padding-bottom: 82px;
+}
+
+/* The project card already names the game below the visual; let the icon carry the visual area. */
 .project-wordmark {
   display: grid;
   place-items: center;
-  gap: 26px;
+  font-size: 0;
+  line-height: 0;
 }
 
 .project-wordmark::before {
   content: "";
   display: block;
-  width: clamp(170px, 23vw, 240px);
+  width: clamp(190px, 25vw, 255px);
   aspect-ratio: 1;
   background: url('/assets/misattribution-icon.svg') center / contain no-repeat;
   border-radius: 22%;
-  box-shadow: 0 24px 50px rgba(22, 12, 48, .18);
+  box-shadow: 0 22px 46px rgba(22, 12, 48, .16);
 }
 
+/* Give the product page a real product identity without turning it into a launch page. */
 body:has(.nav-links a[aria-current="page"][href="/misattribution/"]) .page-hero .shell {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
@@ -30,7 +41,7 @@ body:has(.nav-links a[aria-current="page"][href="/misattribution/"]) .page-hero 
   aspect-ratio: 1;
   background: url('/assets/misattribution-icon.svg') center / contain no-repeat;
   border-radius: 22%;
-  box-shadow: 0 28px 65px rgba(22, 12, 48, .20);
+  box-shadow: 0 26px 58px rgba(22, 12, 48, .16);
 }
 
 body:has(.nav-links a[aria-current="page"][href="/misattribution/"]) .page-hero .eyebrow,
@@ -39,7 +50,27 @@ body:has(.nav-links a[aria-current="page"][href="/misattribution/"]) .page-hero 
   grid-column: 1;
 }
 
+/* A compact placeholder signals future screenshots without dominating the page. */
+body:has(.nav-links a[aria-current="page"][href="/misattribution/"]) .coming-soon {
+  min-height: 255px;
+  background: #f0eee7;
+}
+
+body:has(.nav-links a[aria-current="page"][href="/misattribution/"]) .coming-soon span {
+  font-size: clamp(30px, 4vw, 46px);
+}
+
 @media (max-width: 760px) {
+  .hero {
+    min-height: auto;
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .project-wordmark::before {
+    width: min(58vw, 220px);
+  }
+
   body:has(.nav-links a[aria-current="page"][href="/misattribution/"]) .page-hero .shell {
     grid-template-columns: 1fr;
   }
@@ -50,5 +81,9 @@ body:has(.nav-links a[aria-current="page"][href="/misattribution/"]) .page-hero 
     width: min(68vw, 280px);
     justify-self: start;
     margin-top: 24px;
+  }
+
+  body:has(.nav-links a[aria-current="page"][href="/misattribution/"]) .coming-soon {
+    min-height: 210px;
   }
 }
