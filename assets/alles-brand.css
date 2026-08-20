@@ -1,5 +1,5 @@
 :root {
-  --brand-red: #e50914;
+  --brand-purple: #5B21B6;
   --brand-black: #0a0a0a;
   --brand-white: #ffffff;
 }
@@ -42,7 +42,7 @@
   right: 0;
   bottom: 2px;
   height: 2px;
-  background: var(--brand-red);
+  background: var(--brand-purple);
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 160ms ease;
@@ -76,15 +76,15 @@
 }
 
 .eyebrow {
-  color: var(--brand-red);
+  color: var(--brand-purple);
 }
 
 .text-link::after {
-  color: var(--brand-red);
+  color: var(--brand-purple);
 }
 
 .contact-link {
-  text-decoration-color: var(--brand-red);
+  text-decoration-color: var(--brand-purple);
 }
 
 .site-footer {
