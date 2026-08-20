@@ -40,4 +40,4 @@ After enabling Pages and configuring DNS, enable HTTPS in GitHub Pages settings.
 
 ## Branding
 
-The current boxed `A` and typography are intentionally temporary. They provide a restrained studio identity for V1 without locking Alles Entertainment or MisAttribution into a final logo system.
+Alles Entertainment uses the **Deep Purple v2** brand system. The primary brand color is `#5B21B6`, paired with black and white. The website preserves the production logo geometry, typography, and spacing while using Deep Purple for the Alles mark and studio accents. MisAttribution keeps its own product identity within that studio system.
