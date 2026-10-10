@@ -2,6 +2,14 @@
 
 Initial public website for **Alles Entertainment LLC**, an independent game studio in Seattle, Washington.
 
+## Editorial integration design
+
+See [docs/editorial/README.md](docs/editorial/README.md) for the Step A design and
+the proposed private editorial route. No editorial application or route has been
+added to this repository yet. Backend authority remains in MisAttribution.
+Step C proposes an allowlisted Pages build before publishing engineering docs or
+the app; the existing branch-root publishing model must not expose internal files.
+
 ## Contents
 
 - `/` — studio home
