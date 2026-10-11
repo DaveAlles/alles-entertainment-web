@@ -10,7 +10,7 @@ The corrected source pair requires fresh sealed-pair gates before retry.
 
 The owner approved the documented bounded Staging deployment, exact source sealing
 and release-branch synchronization. The execution pin is backend
-`94c94aae713ba3ac08684949fea9a6bcd62ce124`; contract exports remain identical after the worker discovery correction. Production and website-main publication remain
+`84004aee0066f574c6dfed4fb325f32aa61f5750`; contract exports remain identical after the worker discovery correction. Production and website-main publication remain
 blocked. Final pinned-pair acceptance and live revalidation are required before
 publishing. This is authorization, not deployment or real-editor acceptance.
 
