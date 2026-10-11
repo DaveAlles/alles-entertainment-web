@@ -5,9 +5,9 @@ Initial public website for **Alles Entertainment LLC**, an independent game stud
 ## Editorial application
 
 [Step D progress](docs/editorial/STEP_D_PROGRESS.md) records fresh local acceptance
-for the committed source pair. Firebase CLI sign-in has since succeeded; live
-inventory and authenticated Pages settings remain pending. The initial live
-Editorial route check returned 404. See the
+for the historical committed source pair and current uncommitted release tooling.
+Authenticated live inventory and Pages discovery are now complete; the concrete
+Staging scope awaits approval. The initial live Editorial route check returned 404. See the
 [release runbook](docs/editorial/STEP_D_RUNBOOK.md). No publication occurred.
 
 The migrated React Editorial frontend is in `editorial-app/`. It builds at
@@ -38,8 +38,8 @@ Then open `http://localhost:8080`.
 
 ## GitHub Pages deployment
 
-The inherited hosting arrangement is documented as main-branch-root Pages with
-`CNAME` set to `www.alles-entertainment.com`; live settings were not verified.
+Authenticated discovery confirms legacy main-branch-root Pages with
+`CNAME` set to `www.alles-entertainment.com` and HTTPS enforced.
 Do not publish the new source tree indiscriminately. Step C adds a validation-only
 workflow and reproducible `dist/local`, `dist/staging`, `dist/prod` site artifacts.
 The deployable Production directory is **dist/prod/**, never the repository root.
@@ -50,8 +50,8 @@ on `codex/editorial-step-c` while the published branch stays unchanged. See
 [sync acceptance](docs/editorial/SYNC_ACCEPTANCE.md) for the current candidate and
 fresh tests. A merge into `main` remains a publishing action subject to Step D.
 
-[Step D](docs/editorial/STEP_D_HANDOFF.md) must separately verify and approve the
-publishing source, guarded artifact workflow and exact compatible revision pair
+[Step D](docs/editorial/STEP_D_HANDOFF.md) must separately approve the
+publishing-source transition, guarded artifact workflow and exact compatible revision pair
 before pushing to an automatically published branch or deploying. No setting or
 DNS was changed. Run `npm run build:local && npm run preview` to inspect the full
 assembled site locally at `http://127.0.0.1:4174`.

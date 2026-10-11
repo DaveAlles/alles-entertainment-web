@@ -2,8 +2,9 @@
 
 Current verification: [Step D progress](STEP_D_PROGRESS.md) and
 [release manifest](STEP_D_RELEASE_MANIFEST.json). The existing contract/source pair
-passed fresh local gates. Hosting migration and live acceptance are still pending;
-the [runbook](STEP_D_RUNBOOK.md) records delivery ownership and blockers.
+passed fresh local gates. The guarded website-owned Staging deployment/predeploy path is implemented locally;
+publication and live acceptance await approval. The [runbook](STEP_D_RUNBOOK.md)
+records exact-pair/attestation/served-artifact requirements and delivery ownership.
 
 Status: implemented locally in Step C, October 10, 2026; undeployed. See the
 [current sync acceptance](SYNC_ACCEPTANCE.md), [original Step C record](STEP_C_PROGRESS.md)
@@ -30,7 +31,7 @@ work. Do not develop two permanent frontends.
 ## Contract and environment
 
 `editorial-app/backend-pin.json` pins the reviewed backend commit
-`3cf524c18f847d66fac236eb24f177d2f6dae835`, `editorial-v2` and digest
+`1d353eb09c07c5e43bf412e2c346633e57394ce9`, `editorial-v2` and digest
 `2f58c00871da4579f30cb471867a00ce1196db7289406d7a71570dd1459a91d0`.
 The three byte-identical approved browser exports and manifest are in
 `src/contract/`. The export generation-base SHA is not the containing backend SHA.

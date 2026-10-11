@@ -21,7 +21,9 @@
     "preview": "node scripts/preview.mjs local",
     "test:emulators": "node scripts/emulators.mjs",
     "test:browser": "npm --prefix editorial-app run test:e2e",
-    "check": "npm run contract:check && npm run typecheck && npm run lint && npm test",
+    "test:release": "node --test scripts/staging-hosting.test.mjs",
+    "deploy:staging": "node scripts/deploy-staging.mjs",
+    "check": "npm run contract:check && npm run typecheck && npm run lint && npm test && npm run test:release",
     "test:build": "node scripts/verify-builds.mjs"
   }
 }

@@ -5,3 +5,4 @@ editorial-app/dist/
 editorial-app/test-results/
 editorial-app/playwright-report/
 .env*
+.firebase-editorial-staging.generated.json

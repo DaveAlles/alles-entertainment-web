@@ -2,8 +2,10 @@
 
 Current checkpoint: [Step D progress](STEP_D_PROGRESS.md),
 [release manifest](STEP_D_RELEASE_MANIFEST.json) and [website runbook](STEP_D_RUNBOOK.md).
-The reconciled pair passed fresh local acceptance; live discovery/deployment and
-real-user acceptance remain incomplete. No site/configuration change occurred.
+The reconciled pair passed local acceptance; authenticated discovery is now complete.
+Website-owned guarded Staging release tooling is prepared locally and awaits
+approval, final sealing and integration. Deployment and real-user acceptance remain
+unrun. No live site/configuration change occurred.
 
 The intended canonical frontend is now [editorial-app](../../editorial-app/).
 Step C migrates and extends the existing backend-owned React portal. The old

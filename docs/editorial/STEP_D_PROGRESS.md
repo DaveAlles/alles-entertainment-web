@@ -1,5 +1,36 @@
 # Step D website acceptance
 
+## Gate A authorized — October 11 UTC
+
+The owner approved the documented bounded Staging deployment, exact source sealing
+and release-branch synchronization. The execution pin is backend
+`1d353eb09c07c5e43bf412e2c346633e57394ce9`; only commit identity changed, with identical contract exports. Production and website-main publication remain
+blocked. Final pinned-pair acceptance and live revalidation are required before
+publishing. This is authorization, not deployment or real-editor acceptance.
+
+## Current discovery and release-tooling checkpoint — October 10
+
+**PARTIAL: discovery complete; Staging approval requested; no deployment.** Website
+base is `f23f44356589dd150f607609765c46c7b2d1fbf0`, pinning backend
+`6881f7132d98742c1eb7926743b105872af3db96`. New uncommitted Staging release tooling
+requires a clean exact pair, complete backend attestation, matching indexes/rules,
+unchanged Hosting occupancy and verified served bytes. Production is unsupported
+by this wrapper. See the updated [runbook](STEP_D_RUNBOOK.md).
+
+Authenticated discovery confirms main/root Pages publication with the existing
+custom domain and HTTPS, and an empty dedicated Firebase Staging site. Neither
+website main nor Production is included in Gate A. Local checks pass 111 UI/transport
+tests plus four deployment-guard tests; deterministic/negative build checks and all
+environment builds pass. Final sealed-pair integration remains mandatory before
+cloud writes. The historical sync and acceptance records below remain unchanged.
+
+Backend-owned live content prerequisites currently block positive trusted puzzle
+acceptance; runtime deployment will not repair them. The private backend
+[release plan](../../../MisAttribution/docs/editorial/STEP_D_RELEASE_PLAN.md) owns
+the exact scope, cost, recovery limits and approval decision. No private account
+identifiers, credential material or cloud discovery payloads are copied here.
+
+
 ## Repository sync follow-up — October 10
 
 The owner subsequently authorized checking in and syncing the release documents
