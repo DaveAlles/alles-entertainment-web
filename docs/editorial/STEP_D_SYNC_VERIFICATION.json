@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_ON_UNCHANGED_RERUN",
+  "scope": "Owner-authorized repository sync; no deployment or live acceptance",
+  "completedAt": "2026-10-11T05:42:04.743693+00:00",
+  "backendSha": "6881f7132d98742c1eb7926743b105872af3db96",
+  "websiteBranch": "codex/editorial-step-c",
+  "websiteCommitResolution": "Commit containing this record; rebuild ignored manifests after commit to record final websiteBaseSha",
+  "contract": {
+    "backendSha": "6881f7132d98742c1eb7926743b105872af3db96",
+    "contractVersion": "editorial-v2",
+    "contractDigest": "2f58c00871da4579f30cb471867a00ce1196db7289406d7a71570dd1459a91d0",
+    "manifestDigest": "48d33244b197f04ca48d0f55de154316e969e30b0d047cb70befeffb897ca01a"
+  },
+  "tests": {
+    "backendAggregate": 795,
+    "websiteUnit": 111,
+    "typecheckLint": "PASS",
+    "editorialBackendGroups": 8,
+    "websiteBrowser": {
+      "startTime": "2026-10-11T05:40:26.113Z",
+      "duration": 18446.741,
+      "expected": 13,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "originalBackendIntegration": "PASS",
+    "originalPortalBrowser": 8,
+    "buildChecks": {
+      "passed": true,
+      "checks": [
+        "website-only standalone builds",
+        "deterministic local/staging/prod rebuilds",
+        "invalid environment denied",
+        "contract drift denied",
+        "stale source denied",
+        "tampered artifact denied",
+        "public baseline drift denied"
+      ],
+      "manifests": {
+        "local": {
+          "bundleDigest": "a7b1037cb1b2c2b3c1dc699a9557a196069948b1fdd2e59cb290ad18cdc6142c",
+          "sourceDigest": "5bed2d9366088631445342cd8fcc39266858042d83a482eec95e1138a9fb7dfb",
+          "projectId": "demo-misattribution"
+        },
+        "staging": {
+          "bundleDigest": "344b2cbb788219767108969010415c26f384034d319b4a743e92186879dc900c",
+          "sourceDigest": "5bed2d9366088631445342cd8fcc39266858042d83a482eec95e1138a9fb7dfb",
+          "projectId": "misattribution-staging"
+        },
+        "prod": {
+          "bundleDigest": "0cee1f046b3fa840ea929cf394e3de50dd33a3487cfc309a600fcca785e4c8df",
+          "sourceDigest": "5bed2d9366088631445342cd8fcc39266858042d83a482eec95e1138a9fb7dfb",
+          "projectId": "misattribution-aa1e2"
+        }
+      },
+      "finishedAt": "2026-10-11T05:35:41.816Z"
+    },
+    "allEnvironmentBuildVerify": "PASS"
+  },
+  "emulator": {
+    "exitCode": 0,
+    "sourceChanged": [],
+    "sourceFingerprint": "ec78d19671c61d619c4abf45876e8ea7679ee092e4b77f1eedc880301a842ea9",
+    "startedAt": "2026-10-11T05:39:56.539Z",
+    "finishedAt": "2026-10-11T05:41:32.824Z"
+  },
+  "initialFailure": {
+    "exitCode": 1,
+    "finishedAt": "2026-10-11T05:38:43.029Z",
+    "test": "retained portal real Auth/API flow",
+    "location": "editorial-portal/tests/portal.e2e.spec.ts:195",
+    "symptom": "Save changes timed out after opening edit and generating the puzzle; captured UI already locked",
+    "assessment": "Intermittent sequencing race suspected; not fixed or proven resolved by the passing rerun",
+    "retest": "Full unchanged suite passed; no application or test code changed"
+  },
+  "artifacts": {
+    "local": {
+      "projectId": "demo-misattribution",
+      "sourceDigest": "5bed2d9366088631445342cd8fcc39266858042d83a482eec95e1138a9fb7dfb",
+      "bundleDigest": "a7b1037cb1b2c2b3c1dc699a9557a196069948b1fdd2e59cb290ad18cdc6142c",
+      "websiteBaseSha": "9cae97ce3d702164c57f0c7a8c0d4aebd908b680",
+      "fileCount": 23
+    },
+    "staging": {
+      "projectId": "misattribution-staging",
+      "sourceDigest": "5bed2d9366088631445342cd8fcc39266858042d83a482eec95e1138a9fb7dfb",
+      "bundleDigest": "344b2cbb788219767108969010415c26f384034d319b4a743e92186879dc900c",
+      "websiteBaseSha": "9cae97ce3d702164c57f0c7a8c0d4aebd908b680",
+      "fileCount": 23
+    },
+    "prod": {
+      "projectId": "misattribution-aa1e2",
+      "sourceDigest": "5bed2d9366088631445342cd8fcc39266858042d83a482eec95e1138a9fb7dfb",
+      "bundleDigest": "0cee1f046b3fa840ea929cf394e3de50dd33a3487cfc309a600fcca785e4c8df",
+      "websiteBaseSha": "9cae97ce3d702164c57f0c7a8c0d4aebd908b680",
+      "fileCount": 23
+    }
+  },
+  "boundaries": {
+    "deployment": false,
+    "liveConfigurationChanged": false,
+    "parentDocumentsVersioned": false,
+    "datedStepDManifests": "Preserved historical source pair; not updated to imply release approval"
+  },
+  "evidenceSha256": {
+    ".operations/step-d/sync/emulators-retry.log": "1ccfbe87782d6f168eeccded99558a0be4efef35f119fcb1cbb715e9b75ad51c",
+    ".operations/step-d/sync/emulator-candidate.json": "77d8f23dfa7a99452150e92d517cecc9efba1256dc8441c23783bd4e11abf276",
+    ".operations/step-d/sync/browser-results.json": "fc74fbd47e0ef011a4103809496ca1e9cca0c8ee9182acb6cc92dae5aad48144",
+    ".operations/step-d/sync/build-checks.json": "e9a3e3349352065a53ac4aa77520790f1ade3076887b9f3e306d38282d2a1f44",
+    ".operations/step-d/sync/initial-integration/emulator-candidate.json": "60b8557fe4a6701674372a60a955f12bb7295f8091a50163b9e0192ecbcf510a"
+  }
+}

@@ -1,5 +1,11 @@
 # Step D handoff — deployment and live acceptance
 
+**Current checkpoint:** Step D has begun under the owner's October 10 request.
+Read [progress](STEP_D_PROGRESS.md), [manifest](STEP_D_RELEASE_MANIFEST.json) and
+[runbook](STEP_D_RUNBOOK.md) first. Fresh local acceptance passed, but authenticated
+live inventory/Pages settings remain pending and no deployment has occurred. The original handoff
+below is preserved; its statement that Step D has not begun is historical.
+
 Step C has passed local acceptance. Step D has not begun. The owner subsequently
 authorized committing and syncing all pending changes, including the separate
 175-code-point system-story work. Deployment, live configuration, identity grants

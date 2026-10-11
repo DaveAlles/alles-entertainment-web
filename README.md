@@ -4,6 +4,12 @@ Initial public website for **Alles Entertainment LLC**, an independent game stud
 
 ## Editorial application
 
+[Step D progress](docs/editorial/STEP_D_PROGRESS.md) records fresh local acceptance
+for the committed source pair. Firebase CLI sign-in has since succeeded; live
+inventory and authenticated Pages settings remain pending. The initial live
+Editorial route check returned 404. See the
+[release runbook](docs/editorial/STEP_D_RUNBOOK.md). No publication occurred.
+
 The migrated React Editorial frontend is in `editorial-app/`. It builds at
 `/misattribution/editorial/` inside an allowlisted complete static-site artifact.
 The public pages remain static and unchanged. Start at

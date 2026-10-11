@@ -1,5 +1,10 @@
 # Editorial website
 
+Current checkpoint: [Step D progress](STEP_D_PROGRESS.md),
+[release manifest](STEP_D_RELEASE_MANIFEST.json) and [website runbook](STEP_D_RUNBOOK.md).
+The reconciled pair passed fresh local acceptance; live discovery/deployment and
+real-user acceptance remain incomplete. No site/configuration change occurred.
+
 The intended canonical frontend is now [editorial-app](../../editorial-app/).
 Step C migrates and extends the existing backend-owned React portal. The old
 portal remains intact for regression checks and rollback until Step D cutover.

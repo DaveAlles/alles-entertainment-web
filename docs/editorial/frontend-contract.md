@@ -1,5 +1,10 @@
 # Editorial frontend contract
 
+Current verification: [Step D progress](STEP_D_PROGRESS.md) and
+[release manifest](STEP_D_RELEASE_MANIFEST.json). The existing contract/source pair
+passed fresh local gates. Hosting migration and live acceptance are still pending;
+the [runbook](STEP_D_RUNBOOK.md) records delivery ownership and blockers.
+
 Status: implemented locally in Step C, October 10, 2026; undeployed. See the
 [current sync acceptance](SYNC_ACCEPTANCE.md), [original Step C record](STEP_C_PROGRESS.md)
 and [Step D handoff](STEP_D_HANDOFF.md).

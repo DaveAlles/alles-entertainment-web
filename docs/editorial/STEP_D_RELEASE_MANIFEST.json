@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "recordType": "Step D local candidate acceptance and blocked live discovery",
+  "status": "PARTIAL",
+  "recordedAt": "2026-10-11T03:50:42.085977+00:00",
+  "userDate": "2026-10-10",
+  "timezone": "America/Los_Angeles",
+  "backendSha": "3cf524c18f847d66fac236eb24f177d2f6dae835",
+  "websiteSha": "9cae97ce3d702164c57f0c7a8c0d4aebd908b680",
+  "contract": {
+    "backendSha": "3cf524c18f847d66fac236eb24f177d2f6dae835",
+    "contractVersion": "editorial-v2",
+    "contractDigest": "2f58c00871da4579f30cb471867a00ce1196db7289406d7a71570dd1459a91d0",
+    "manifestDigest": "48d33244b197f04ca48d0f55de154316e969e30b0d047cb70befeffb897ca01a"
+  },
+  "artifacts": {
+    "local": {
+      "environment": "local",
+      "projectId": "demo-misattribution",
+      "sourceDigest": "797ae3be4a01e5faef5625c78b2acba91a1c29f8072164944326102e691c4f68",
+      "bundleDigest": "4ea3e12c51e0582fc97fef61815fe59b99bb4cac3dc7d473ff692ed6c0ea6e41",
+      "contractDigest": "2f58c00871da4579f30cb471867a00ce1196db7289406d7a71570dd1459a91d0",
+      "contractVersion": "editorial-v2",
+      "directory": "dist/local",
+      "manifestSha256": "5910482489460857986137e9a9e168bfeaf8349635f509b98f51dc1940b31c11",
+      "files": 24,
+      "deployed": false
+    },
+    "staging": {
+      "environment": "staging",
+      "projectId": "misattribution-staging",
+      "sourceDigest": "797ae3be4a01e5faef5625c78b2acba91a1c29f8072164944326102e691c4f68",
+      "bundleDigest": "a3664776fc1bc7f170d358ca44c8bfb5c7b430442fc980c1ba9e1f91ce076988",
+      "contractDigest": "2f58c00871da4579f30cb471867a00ce1196db7289406d7a71570dd1459a91d0",
+      "contractVersion": "editorial-v2",
+      "directory": "dist/staging",
+      "manifestSha256": "24c588c2cf3877c0f18babd97d7d08e184992afbdf8501fd0225a04d45f28c85",
+      "files": 24,
+      "deployed": false
+    },
+    "prod": {
+      "environment": "prod",
+      "projectId": "misattribution-aa1e2",
+      "sourceDigest": "797ae3be4a01e5faef5625c78b2acba91a1c29f8072164944326102e691c4f68",
+      "bundleDigest": "891ce6efc44f5f0a93f40d4822bf2cf8ad8dae294455903a1591d61b46bcafcd",
+      "contractDigest": "2f58c00871da4579f30cb471867a00ce1196db7289406d7a71570dd1459a91d0",
+      "contractVersion": "editorial-v2",
+      "directory": "dist/prod",
+      "manifestSha256": "4f3c342493bfeb20b2d3e97b305f1a301b261b60f6800720d1ecf9df49647493",
+      "files": 24,
+      "deployed": false
+    }
+  },
+  "localAcceptance": {
+    "backendAggregateTests": 795,
+    "frontendTests": 111,
+    "editorialIntegrationGroups": 8,
+    "websiteBrowserTests": 13,
+    "retainedPortalBrowserTests": 8,
+    "additionalBackendSuites": 6,
+    "status": "PASS"
+  },
+  "deployed": false,
+  "liveVerified": false,
+  "operationallyAccepted": false,
+  "deploymentApproval": null,
+  "publicEditorialHttpStatus": 404,
+  "remainingGate": "Authenticated deployment discovery, release workflow preparation and separately approved Staging/Production acceptance",
+  "parentDocumentsVersioned": false,
+  "localDocumentationUncommitted": true
+}
