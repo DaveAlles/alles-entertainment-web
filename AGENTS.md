@@ -12,8 +12,8 @@
   contracts and coordinate the producer/consumer change. Never implement trusted
   role, publication, moderation or environment decisions in the browser.
 - Follow `docs/editorial/frontend-contract.md` and parent
-  `../docs/editorial/implementation-plan.md`. The existing portal remains in
-  MisAttribution until the separately authorized Step C migration.
+  `../docs/editorial/implementation-plan.md`. `editorial-app/` is the intended canonical frontend. The original portal in
+  MisAttribution stays intact until separately approved Step D live cutover.
 - Keep privileged content out of static artifacts, source maps, telemetry,
   browser persistence and public navigation/sitemaps. A hidden route is not an
   access control. Validate every backend response and clear state on sign-out.
@@ -22,4 +22,6 @@
 - Update the owning document and cross-links when interfaces change; do not copy
   the backend specification here. Parent documents are currently unversioned.
 - No commit, push, deployment, credential/IAM/provider action or live mutation
-  without user authorization. Step A permits Markdown changes only.
+  without user authorization. Step C permits local implementation/testing;
+  Step D remains separately authorized. Use `npm run check`, `contract:local`,
+  full `test:emulators`, and environment build/verify gates before handoff.

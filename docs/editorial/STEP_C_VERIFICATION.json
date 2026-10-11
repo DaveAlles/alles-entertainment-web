@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "Local Step C accepted candidate pinned to the recorded backend commit; subsequent shared-checkout edits are not included",
+  "completedAt": "2026-10-10T23:41:36.493Z",
+  "website": {
+    "baseCommit": "668651491975317f38b4166aaf276153724b5b2f",
+    "uncommitted": true,
+    "sourceDigest": "18b575346a2cc1f9f364c954853dd4eeb3bb35f7b257965af17114d3f4caa16d",
+    "cachedOriginParity": "0\t0"
+  },
+  "backend": {
+    "sourceCommit": "88f8208cf33d2fd2256d48752d7b21fef3823065",
+    "legacyPortalChanged": false,
+    "cachedOriginParity": "0\t0",
+    "applicationSourceChangedByThisTask": false
+  },
+  "contract": {
+    "backendSha": "88f8208cf33d2fd2256d48752d7b21fef3823065",
+    "contractVersion": "editorial-v2",
+    "contractDigest": "2f58c00871da4579f30cb471867a00ce1196db7289406d7a71570dd1459a91d0",
+    "manifestDigest": "48d33244b197f04ca48d0f55de154316e969e30b0d047cb70befeffb897ca01a"
+  },
+  "versions": {
+    "node": "v22.20.0",
+    "npm": "10.9.3",
+    "firebase": "12.1.0",
+    "react": "18.3.1",
+    "vite": "7.3.6",
+    "vitest": "4.1.11",
+    "@playwright/test": "1.63.0",
+    "@axe-core/playwright": "4.13.0"
+  },
+  "tests": {
+    "unitComponent": {
+      "passed": 111,
+      "files": 5,
+      "typecheck": "PASS",
+      "lint": "PASS"
+    },
+    "editorialBackend": {
+      "passedGroups": 8
+    },
+    "websiteBrowser": {
+      "passed": 13,
+      "failed": 0,
+      "skipped": 0
+    },
+    "originalBackendIntegration": "PASS",
+    "originalPortalBrowser": {
+      "passed": 8
+    },
+    "accessibility": {
+      "automatedViolations": 0,
+      "scanTags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21aa",
+        "wcag22aa"
+      ],
+      "viewports": [
+        390,
+        768,
+        1280
+      ],
+      "textScale": "200%",
+      "keyboardDialogAndCombobox": "PASS",
+      "screenshotsVisuallyInspected": true
+    },
+    "buildChecks": [
+      "website-only standalone builds",
+      "deterministic local/staging/prod rebuilds",
+      "invalid environment denied",
+      "contract drift denied",
+      "stale source denied",
+      "tampered artifact denied",
+      "public baseline drift denied"
+    ]
+  },
+  "artifacts": {
+    "local": {
+      "directory": "dist/local",
+      "projectId": "demo-misattribution",
+      "sourceDigest": "18b575346a2cc1f9f364c954853dd4eeb3bb35f7b257965af17114d3f4caa16d",
+      "bundleDigest": "0a57af2b0c88c9cf60f9351dcdfa19be2427dbeed8c64f75065a4456cb550c7a",
+      "files": 24,
+      "manifestSha256": "c7f19534abe32138de3e402297f3f8600a523b7995f2b491ecaae450a5de1ff2"
+    },
+    "staging": {
+      "directory": "dist/staging",
+      "projectId": "misattribution-staging",
+      "sourceDigest": "18b575346a2cc1f9f364c954853dd4eeb3bb35f7b257965af17114d3f4caa16d",
+      "bundleDigest": "911d0e3f6062d46491cbdb8ee2e8ca2fa84ca217c0298054795b20147227e363",
+      "files": 24,
+      "manifestSha256": "04b4bfe1cfb0aa5d01815142ab70d40f596a73f99844640c6590e481b2d33038"
+    },
+    "prod": {
+      "directory": "dist/prod",
+      "projectId": "misattribution-aa1e2",
+      "sourceDigest": "18b575346a2cc1f9f364c954853dd4eeb3bb35f7b257965af17114d3f4caa16d",
+      "bundleDigest": "f15ba3b0352367536e907d5aeddc0d73446f2e0387333d0fe44543e838d97a15",
+      "files": 24,
+      "manifestSha256": "698f77858f705ca0db92e95b30ac74d7aec15a10ac2537749ed858c46cfc0945"
+    }
+  },
+  "backendCandidate": {
+    "sourceFingerprint": "abaab54df3422360445cc6a1167f847d66b78fcf490c12fd3409030cac6dc274",
+    "sourceChangedDuringRun": [],
+    "exitCode": 0,
+    "ports": {
+      "auth": 29099,
+      "firestore": 28080,
+      "functions": 25001,
+      "website": 4174
+    }
+  },
+  "evidence": {
+    "ignoredDirectory": ".operations/step-c",
+    "sha256": {
+      "check-final.log": "3088c7af8c47e02f4e115e8e3af7db0041fb35419dc59aa8b4d87600efee3d74",
+      "emulators-final.log": "d4ab53b9bdee6b73d07799663d8d8c82982d449379842509f889e429931e04b7",
+      "browser-results.json": "fe281ad0d891d6affb17a3bdeb9f2a3b7c224d73bc30ee6f0b615917824e865a",
+      "emulator-candidate.json": "05e31bd875d264ff60fec5aa595fa26ba05bfee4c83d422a2275dd694f505579",
+      "build-final.log": "114046bcb3187e14e87ab61be475b3e9fa9ffdd0b505168a4a25be81b6966d37",
+      "build-checks.json": "fea8ad4217dbb96e2489f9ad2756d45b433a5a8490074c7ae5bb1fc9703fe057",
+      "build-staging.log": "b67e6a9615357a4549802b5ec56919bb1b9234383625f2ac49d4573060df24ff",
+      "build-prod.log": "5e42957f78df2a2eb88c6ae5d9562e1dda6e4895e0610512356de5fb412137dd",
+      "install-final.log": "7c82505ed5b6073dfdd90f6670b915f73c20edb2533c4c7828e2d30ab07cd422",
+      "dependencies-final.log": "681389eed83494c90fcf8634ee10edee96146257de90140a9ac1de29d850ba01",
+      "pinned-contract-final.log": "1022329b98e23f8b8788a87060667b6b3c57063bf64babf703c73c6fd078a1a1",
+      "pinned-contract-final.json": "2595e6efb394d757b48f56ec1c910afb7537f6b64bd3b7e599a679147015225f"
+    },
+    "screenshotsDirectory": "editorial-app/test-results",
+    "screenshotSha256": {
+      "audit.png": "7dedd5b55cfad8e4c3a5685cf0c66a97673fb452ab66d57ef61f25537d8fbadd",
+      "community-1280.png": "45e40fd8609cf6bfc2e6e503bbaa4ec2fddd389a24f615628d8896a0908725b5",
+      "community-390.png": "8c20820902fc8b3009bf311ded08244e298cde526c548d63fbcff91a8bc139eb",
+      "community-768.png": "c105e25d09ebe53233e431ee3c286339294b1a86b4c55b83ef99114b651093f5",
+      "history.png": "305de4cea660911182e69078542ae6201e759ac79af07f5bb575d1454bdda5ed",
+      "operator.png": "1b6602039383e4af44420fdde71280ba14f2d56559d16d55afd97450f0df3a8e",
+      "overview.png": "5905f7c76dc9510144880bf03e650ed3c7334dd19275f871fa05d9b7eb16aaa4",
+      "preview.png": "9a205cad3783630327613844f4b411e0ed0c41c7a96c770beec1ec41728566df",
+      "puzzles.png": "b0eefed1b9e60a316c2e4c24ccbcd196271f05d9c973aab22f6bcc34733cec94",
+      "sign-in.png": "c2cc7270059241a1a7f91fde0b0571be4d04091caeb85308c433be0ad2f2a696"
+    }
+  },
+  "boundaries": {
+    "deployed": false,
+    "committed": false,
+    "pushed": false,
+    "liveFirebaseApplicationAccess": false,
+    "realGoogleIdentityAcceptance": false,
+    "paidProviderCalls": false,
+    "liveFlagsChanged": false,
+    "parentDocumentsVersioned": false
+  },
+  "externalGates": [
+    "Pages publishing source and guarded deployment workflow",
+    "Exact committed revision pair and backend deployment",
+    "Real per-project Dave and Jill Google identities and independent moderator grants",
+    "Authorized domains, callable invocation IAM and rules/index readiness",
+    "Real browser session and scoped Staging acceptance",
+    "Production promotion and player effects",
+    "Provider, policy and physical-device gates where feature activation requires them"
+  ],
+  "currentSharedBackendCheckout": {
+    "status": "BLOCKED for a fresh combined run until separately reviewed",
+    "reason": "Additional unrelated backend/mobile/test changes appeared after the accepted emulator run; preserved untouched",
+    "includedInStepCAcceptance": false,
+    "exactPinnedArchiveParity": "PASS",
+    "archiveMethod": "git archive of backend pin with isolated GIT_WORK_TREE and GIT_OPTIONAL_LOCKS=0",
+    "checkedAt": "2026-10-10T23:42:53.536181+00:00"
+  },
+  "recordType": "Historical original Step C candidate",
+  "supersededBy": "SYNC_VERIFICATION.json"
+}

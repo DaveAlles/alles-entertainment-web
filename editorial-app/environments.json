@@ -1,0 +1,24 @@
+{
+  "local": {
+    "projectId": "demo-misattribution",
+    "apiKey": "demo-key",
+    "appId": "demo-editorial",
+    "authDomain": "localhost"
+  },
+  "staging": {
+    "projectId": "misattribution-staging",
+    "appId": "1:1089299411836:web:1532d4e7796ae19d41eaf9",
+    "storageBucket": "misattribution-staging.firebasestorage.app",
+    "apiKey": "AIzaSyDKpeS4eHiAArkWLkxOaGJe9JLIsHuENFE",
+    "authDomain": "misattribution-staging.firebaseapp.com",
+    "messagingSenderId": "1089299411836"
+  },
+  "prod": {
+    "apiKey": "AIzaSyBTxzGzzHC-ma30yZcSPg5kSHTVnSfxdNo",
+    "authDomain": "misattribution-aa1e2.firebaseapp.com",
+    "projectId": "misattribution-aa1e2",
+    "storageBucket": "misattribution-aa1e2.firebasestorage.app",
+    "messagingSenderId": "721829079677",
+    "appId": "1:721829079677:web:08cd425592d4c4b9a7df14"
+  }
+}

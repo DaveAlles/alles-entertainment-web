@@ -1,0 +1,26 @@
+name: Editorial validation (no deployment)
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: editorial-app/package-lock.json
+      - run: npm ci && npm run setup
+      - run: npm run check
+      - run: npm run build:staging && npm run build:prod
+      - uses: actions/upload-artifact@v4
+        with:
+          name: editorial-static-candidates
+          path: dist/
+          retention-days: 7
+# No Pages/Firebase write permissions, deploy job, or automatic publication.
+# Step D must separately authorize the publishing source and exact artifact.

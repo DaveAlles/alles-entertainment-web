@@ -2,13 +2,13 @@
 
 Initial public website for **Alles Entertainment LLC**, an independent game studio in Seattle, Washington.
 
-## Editorial integration design
+## Editorial application
 
-See [docs/editorial/README.md](docs/editorial/README.md) for the Step A design and
-the proposed private editorial route. No editorial application or route has been
-added to this repository yet. Backend authority remains in MisAttribution.
-Step C proposes an allowlisted Pages build before publishing engineering docs or
-the app; the existing branch-root publishing model must not expose internal files.
+The migrated React Editorial frontend is in `editorial-app/`. It builds at
+`/misattribution/editorial/` inside an allowlisted complete static-site artifact.
+The public pages remain static and unchanged. Start at
+[Editorial documentation](docs/editorial/README.md) for setup, local acceptance
+and the separately authorized Step D handoff. No frontend or backend was deployed.
 
 ## Contents
 
@@ -18,7 +18,7 @@ the app; the existing branch-root publishing model must not expose internal file
 - `/contact/` — public company contact
 - `/privacy/` — website privacy policy
 
-The site is deliberately static and dependency-free so it can be deployed quickly and maintained with essentially no infrastructure.
+The public pages remain dependency-free. Editorial build/test dependencies are isolated in `editorial-app/`.
 
 ## Local preview
 
@@ -32,11 +32,23 @@ Then open `http://localhost:8080`.
 
 ## GitHub Pages deployment
 
-This repository is designed to be published directly from the `main` branch root using GitHub Pages. The included `CNAME` file sets the intended custom domain to:
+The inherited hosting arrangement is documented as main-branch-root Pages with
+`CNAME` set to `www.alles-entertainment.com`; live settings were not verified.
+Do not publish the new source tree indiscriminately. Step C adds a validation-only
+workflow and reproducible `dist/local`, `dist/staging`, `dist/prod` site artifacts.
+The deployable Production directory is **dist/prod/**, never the repository root.
 
-`www.alles-entertainment.com`
+The owner authorized Git sync after Step C. GitHub's successful Pages run for
+`6686514` confirms that `main` has auto-published, so the new source is synchronized
+on `codex/editorial-step-c` while the published branch stays unchanged. See
+[sync acceptance](docs/editorial/SYNC_ACCEPTANCE.md) for the current candidate and
+fresh tests. A merge into `main` remains a publishing action subject to Step D.
 
-After enabling Pages and configuring DNS, enable HTTPS in GitHub Pages settings.
+[Step D](docs/editorial/STEP_D_HANDOFF.md) must separately verify and approve the
+publishing source, guarded artifact workflow and exact compatible revision pair
+before pushing to an automatically published branch or deploying. No setting or
+DNS was changed. Run `npm run build:local && npm run preview` to inspect the full
+assembled site locally at `http://127.0.0.1:4174`.
 
 ## Before public launch
 

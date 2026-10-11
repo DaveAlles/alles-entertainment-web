@@ -1,0 +1,27 @@
+{
+  "name": "alles-entertainment-web",
+  "private": true,
+  "engines": {
+    "node": ">=22.12 <23"
+  },
+  "scripts": {
+    "setup": "npm --prefix editorial-app ci",
+    "typecheck": "npm --prefix editorial-app run typecheck",
+    "lint": "npm --prefix editorial-app run lint",
+    "test": "npm --prefix editorial-app test",
+    "contract:check": "node scripts/contract.mjs",
+    "contract:local": "node scripts/contract.mjs --local",
+    "contract:sync": "node scripts/contract.mjs --local --sync",
+    "build:local": "node scripts/site.mjs build local",
+    "build:staging": "node scripts/site.mjs build staging",
+    "build:prod": "node scripts/site.mjs build prod",
+    "verify:local": "node scripts/site.mjs verify local",
+    "verify:staging": "node scripts/site.mjs verify staging",
+    "verify:prod": "node scripts/site.mjs verify prod",
+    "preview": "node scripts/preview.mjs local",
+    "test:emulators": "node scripts/emulators.mjs",
+    "test:browser": "npm --prefix editorial-app run test:e2e",
+    "check": "npm run contract:check && npm run typecheck && npm run lint && npm test",
+    "test:build": "node scripts/verify-builds.mjs"
+  }
+}

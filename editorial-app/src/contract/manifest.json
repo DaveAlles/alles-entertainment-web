@@ -1,0 +1,11 @@
+{
+  "contractVersion": "editorial-v2",
+  "backendRevision": "eea5f880f34d5014de869c0bf5c561b510913ec1",
+  "revisionMeaning": "generation-base",
+  "sourceFingerprint": "2f58c00871da4579f30cb471867a00ce1196db7289406d7a71570dd1459a91d0",
+  "files": {
+    "functions/src/editorial/contracts.ts": "ac1ca475dfecd71d9738f9686018c523f2a9633a1f5c1c81c6c5a52a4a89cb79",
+    "functions/src/editorial/backendContracts.ts": "6c28c6ad9cc76af408df7f51c1b10a8ff66d6f674c8e194064c53e09678e47c9",
+    "shared/communityReality.ts": "d8489bb765f7f2e40afea4f84e446847bf7dd527e2b3c7a1f3a591d0fb7ffabf"
+  }
+}

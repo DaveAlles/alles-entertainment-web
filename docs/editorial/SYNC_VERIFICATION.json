@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "Local acceptance for owner-authorized repository synchronization; no deployment",
+  "completedAt": "2026-10-11T03:27:36.348Z",
+  "website": {
+    "branch": "codex/editorial-step-c",
+    "baseCommit": "668651491975317f38b4166aaf276153724b5b2f",
+    "sourceDigest": "797ae3be4a01e5faef5625c78b2acba91a1c29f8072164944326102e691c4f68",
+    "commitResolution": "Containing Git commit of this record; rebuild manifests after committing to record the final websiteBaseSha"
+  },
+  "backend": {
+    "sourceCommit": "3cf524c18f847d66fac236eb24f177d2f6dae835",
+    "clean": true,
+    "systemStoryMaxCodePoints": 175,
+    "communityMaxGraphemes": 280,
+    "legacyPortalChanged": false
+  },
+  "contract": {
+    "backendSha": "3cf524c18f847d66fac236eb24f177d2f6dae835",
+    "contractVersion": "editorial-v2",
+    "contractDigest": "2f58c00871da4579f30cb471867a00ce1196db7289406d7a71570dd1459a91d0",
+    "manifestDigest": "48d33244b197f04ca48d0f55de154316e969e30b0d047cb70befeffb897ca01a"
+  },
+  "tests": {
+    "backendAggregate": {
+      "passed": 795,
+      "mobile": 158,
+      "functions": 247,
+      "ingestion": 179,
+      "operations": 150,
+      "retainedPortal": 61,
+      "typecheck": "PASS",
+      "lint": "PASS",
+      "builds": "PASS"
+    },
+    "frontend": {
+      "passed": 111,
+      "files": 5,
+      "typecheck": "PASS",
+      "lint": "PASS"
+    },
+    "editorialBackend": {
+      "passedGroups": 8
+    },
+    "websiteBrowser": {
+      "startTime": "2026-10-11T03:25:46.504Z",
+      "duration": 18841.665,
+      "expected": 13,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "originalBackendIntegration": "PASS",
+    "originalPortalBrowser": {
+      "passed": 8
+    },
+    "sourceSynchronization": "PASS",
+    "isolatedNativeUiTypecheck": "PASS",
+    "nativeMaximumTextValidation": "NOT RUN",
+    "buildChecks": [
+      "website-only standalone builds",
+      "deterministic local/staging/prod rebuilds",
+      "invalid environment denied",
+      "contract drift denied",
+      "stale source denied",
+      "tampered artifact denied",
+      "public baseline drift denied"
+    ]
+  },
+  "emulator": {
+    "backendSourceFingerprint": "600124a9f3a068bb3d7c81c15d714ccbba4327e38e1135dee3d29c7419f3a2dc",
+    "sourceChanged": [],
+    "exitCode": 0,
+    "startedAt": "2026-10-11T03:25:15.581Z",
+    "finishedAt": "2026-10-11T03:27:01.674Z"
+  },
+  "artifacts": {
+    "local": {
+      "projectId": "demo-misattribution",
+      "sourceDigest": "797ae3be4a01e5faef5625c78b2acba91a1c29f8072164944326102e691c4f68",
+      "bundleDigest": "4ea3e12c51e0582fc97fef61815fe59b99bb4cac3dc7d473ff692ed6c0ea6e41",
+      "fileCount": 24
+    },
+    "staging": {
+      "projectId": "misattribution-staging",
+      "sourceDigest": "797ae3be4a01e5faef5625c78b2acba91a1c29f8072164944326102e691c4f68",
+      "bundleDigest": "a3664776fc1bc7f170d358ca44c8bfb5c7b430442fc980c1ba9e1f91ce076988",
+      "fileCount": 24
+    },
+    "prod": {
+      "projectId": "misattribution-aa1e2",
+      "sourceDigest": "797ae3be4a01e5faef5625c78b2acba91a1c29f8072164944326102e691c4f68",
+      "bundleDigest": "891ce6efc44f5f0a93f40d4822bf2cf8ad8dae294455903a1591d61b46bcafcd",
+      "fileCount": 24
+    }
+  },
+  "evidenceSha256": {
+    ".operations/step-c/check-sync.log": "db08be6288bf76239357486eb0961ed0e1f21e23ff6f46aaa3b9e008999dedc4",
+    ".operations/step-c/emulators-sync.log": "25c48d84215d10f64e0a378f7d1a7307434855c83de82749f20093a02ada160e",
+    ".operations/step-c/emulator-candidate.json": "e85c48ebbfed2440010dbd24f6103cbef703abce985bf7b8601736eed96be9ce",
+    ".operations/step-c/browser-results.json": "01f4f01b7698b69f9d2d0002bfeb565f65b2d0545350db9222ab0ec1a7e20120",
+    ".operations/step-c/build-checks-sync.log": "114046bcb3187e14e87ab61be475b3e9fa9ffdd0b505168a4a25be81b6966d37",
+    ".operations/step-c/build-checks.json": "c63789f583d71a8bb24d87449c24f5d6119e07346151d02fb4d8ba58bd0fd5d1",
+    "MisAttribution/.operations/sync/step-c-2026-10-10/test-all.log": "b59419b3d0247b97f834bfd05c314b14624f2f64811cf6c1850355c9d926a317"
+  },
+  "gitDestinations": {
+    "backend": "origin/main",
+    "website": "origin/codex/editorial-step-c",
+    "websiteMainPreserved": "668651491975317f38b4166aaf276153724b5b2f"
+  },
+  "pagesObservation": {
+    "runUrl": "https://github.com/DaveAlles/alles-entertainment-web/actions/runs/38094013106",
+    "branch": "main",
+    "commit": "668651491975317f38b4166aaf276153724b5b2f",
+    "conclusion": "success",
+    "settingsPageVerified": false
+  },
+  "boundaries": {
+    "deployment": false,
+    "liveConfigurationChanged": false,
+    "paidProviderCalls": false,
+    "realIdentityAcceptance": false,
+    "parentDocumentsVersioned": false,
+    "gitCompletion": "Verified separately after push; this is the pre-commit acceptance record"
+  }
+}
