@@ -31,7 +31,7 @@ work. Do not develop two permanent frontends.
 ## Contract and environment
 
 `editorial-app/backend-pin.json` pins the reviewed backend commit
-`1d353eb09c07c5e43bf412e2c346633e57394ce9`, `editorial-v2` and digest
+`94c94aae713ba3ac08684949fea9a6bcd62ce124`, `editorial-v2` and digest
 `2f58c00871da4579f30cb471867a00ce1196db7289406d7a71570dd1459a91d0`.
 The three byte-identical approved browser exports and manifest are in
 `src/contract/`. The export generation-base SHA is not the containing backend SHA.

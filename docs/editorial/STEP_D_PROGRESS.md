@@ -1,10 +1,16 @@
 # Step D website acceptance
 
+The current pin includes the narrow Firebase discovery correction: human-only
+workers do not declare an unused OpenAI secret. Contract exports, browser behavior
+and approved Staging scope are unchanged. The first backend attempt applied IAM
+and indexes, then stopped before any function updates; no secret was provided.
+The corrected source pair requires fresh sealed-pair gates before retry.
+
 ## Gate A authorized — October 11 UTC
 
 The owner approved the documented bounded Staging deployment, exact source sealing
 and release-branch synchronization. The execution pin is backend
-`1d353eb09c07c5e43bf412e2c346633e57394ce9`; only commit identity changed, with identical contract exports. Production and website-main publication remain
+`94c94aae713ba3ac08684949fea9a6bcd62ce124`; contract exports remain identical after the worker discovery correction. Production and website-main publication remain
 blocked. Final pinned-pair acceptance and live revalidation are required before
 publishing. This is authorization, not deployment or real-editor acceptance.
 
