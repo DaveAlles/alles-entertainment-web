@@ -1,5 +1,13 @@
 # Website release runbook — pre-release
 
+October 11 execution status: backend code is deployed but its release attestation
+is blocked by 30 missing invoker grants under inherited domain policy. Dedicated
+Staging Hosting is still unpublished. Resume only after the backend-owned
+[policy exception plan](../../../MisAttribution/docs/editorial/STEP_D_POLICY_EXCEPTION_PLAN.md)
+is explicitly approved, implemented and restored by an organization-policy admin.
+Use the frozen pair `84004ae` / `1c24076`; documentation commits are not new
+release candidates. All existing Staging predeploy/served-byte gates remain required.
+
 **Not yet executable as an approved deployment.** Read [Step D progress](STEP_D_PROGRESS.md),
 the [manifest](STEP_D_RELEASE_MANIFEST.json) and [original handoff](STEP_D_HANDOFF.md).
 The backend owns live scope, authorization, schema, IAM and promotion authority;

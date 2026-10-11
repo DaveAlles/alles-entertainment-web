@@ -1,5 +1,23 @@
 # Step D website acceptance
 
+## Current execution — Staging publication blocked
+
+The frozen release pair is backend `84004ae` / website `1c24076`, with Staging
+bundle `b43077c7cdb7f3f0daa81a9322b33fed077d21e9b5069b3853a498ed529d35f8`.
+All 52 backend functions are ACTIVE, but inherited organization policy rejected
+the 30 new callable invoker grants. No successful backend attestation exists;
+this site has **not** been published to Staging. The two new backend schedules
+are paused. Production and website main remain unchanged and blocked.
+
+Final-pair local acceptance passed 115 website tests, contract/static gates,
+13 website browser tests and eight retained-portal tests. Real Google/editor
+acceptance is NOT RUN. See the backend-owned
+[execution result](../../../MisAttribution/docs/editorial/STEP_D_EXECUTION_RESULT.md)
+and [additional policy plan](../../../MisAttribution/docs/editorial/STEP_D_POLICY_EXCEPTION_PLAN.md).
+Documentation-only follow-up commits preserve the frozen candidate pin/artifact
+identities; use clean paired checkouts of the release commits when resuming.
+Earlier checkpoints below remain historical.
+
 The current pin includes the narrow Firebase discovery correction: human-only
 workers do not declare an unused OpenAI secret. Contract exports, browser behavior
 and approved Staging scope are unchanged. The first backend attempt applied IAM
