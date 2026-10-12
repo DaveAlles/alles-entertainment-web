@@ -1,18 +1,29 @@
-# Website release runbook — pre-release
+# Website release runbook — Staging deployed, acceptance pending
 
-October 11 execution status: backend code is deployed but its release attestation
-is blocked by 30 missing invoker grants under inherited domain policy. Dedicated
-Staging Hosting is still unpublished. Resume only after the backend-owned
-[policy exception plan](../../../MisAttribution/docs/editorial/STEP_D_POLICY_EXCEPTION_PLAN.md)
-is explicitly approved, implemented and restored by an organization-policy admin.
-Use the frozen pair `84004ae` / `1c24076`; documentation commits are not new
-release candidates. All existing Staging predeploy/served-byte gates remain required.
+## Current execution — Staging published; real-editor acceptance pending
 
-**Not yet executable as an approved deployment.** Read [Step D progress](STEP_D_PROGRESS.md),
-the [manifest](STEP_D_RELEASE_MANIFEST.json) and [original handoff](STEP_D_HANDOFF.md).
-The backend owns live scope, authorization, schema, IAM and promotion authority;
-this document owns website delivery. The Staging wrapper is now implemented and
-locally tested; this document is not permission to publish.
+[Staging Editorial](https://misattr-editorial-staging.web.app/misattribution/editorial/)
+is deployed from website `6dcae9fbc548b8d52a132643a27697a0c7037604` with backend `84004aee0066f574c6dfed4fb325f32aa61f5750`.
+Bundle `b43077c7cdb7f3f0daa81a9322b33fed077d21e9b5069b3853a498ed529d35f8` is verified against served files. Real signed-out browser checks
+pass for desktop/mobile, hash refresh, headers and 404 handling. Backend attestation
+and all 46 authentication denials pass. The temporary policy exception is restored
+and temporary administrator access removed; both approved new jobs are enabled.
+
+The first Hosting attempt stopped before upload because Firebase generated an
+unignored debug log. The committed `.gitignore` correction preserves all deployment
+assertions; 115 tests and explicit dirty-source regression checks passed. Application
+bytes are unchanged. Website main remains `6686514`; Production and public Pages
+publication remain blocked. Dave/Jill real sign-ins and staff workflow acceptance
+remain pending, and trusted-content tests remain blocked. See the backend-owned
+[execution result](../../../MisAttribution/docs/editorial/STEP_D_EXECUTION_RESULT.md).
+Documentation follow-ups do not change the deployed source pair. Earlier checkpoints
+below are historical; parent coordination documents remain unversioned.
+
+The commands below remain guarded procedures, not permission for another release.
+For any future publication, capture the actual current Hosting release; the original
+`previousHostingRelease: null` first-release plan must not be reused. Keep Firebase's
+root debug logs and `.firebase/` cache excluded from Git; they are private generated
+operator output, never deployment artifacts. Tracked/untracked source remains guarded.
 
 ## Before any publication
 
@@ -54,8 +65,8 @@ No new Hosting site, domain or Google-provider configuration is required.
 
 After scoped approval, commit the reviewed backend changes, repin this website to
 the resulting backend SHA, commit on the existing release branch, then rerun full
-local acceptance and rebuild. The current preliminary bundle still pins the base
-revision and must not be deployed. Do not push website main.
+local acceptance and rebuild. The original preliminary bundle was superseded by the exact deployed pair above;
+never reuse a stale preparation artifact. Do not push website main.
 
 Write the private plan under ignored `.operations/step-d/` with these exact fields:
 

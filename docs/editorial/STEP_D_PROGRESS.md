@@ -1,28 +1,23 @@
 # Step D website acceptance
 
-## Current execution — Staging publication blocked
+## Current execution — Staging published; real-editor acceptance pending
 
-The frozen release pair is backend `84004ae` / website `1c24076`, with Staging
-bundle `b43077c7cdb7f3f0daa81a9322b33fed077d21e9b5069b3853a498ed529d35f8`.
-All 52 backend functions are ACTIVE, but inherited organization policy rejected
-the 30 new callable invoker grants. No successful backend attestation exists;
-this site has **not** been published to Staging. The two new backend schedules
-are paused. Production and website main remain unchanged and blocked.
+[Staging Editorial](https://misattr-editorial-staging.web.app/misattribution/editorial/)
+is deployed from website `6dcae9fbc548b8d52a132643a27697a0c7037604` with backend `84004aee0066f574c6dfed4fb325f32aa61f5750`.
+Bundle `b43077c7cdb7f3f0daa81a9322b33fed077d21e9b5069b3853a498ed529d35f8` is verified against served files. Real signed-out browser checks
+pass for desktop/mobile, hash refresh, headers and 404 handling. Backend attestation
+and all 46 authentication denials pass. The temporary policy exception is restored
+and temporary administrator access removed; both approved new jobs are enabled.
 
-Final-pair local acceptance passed 115 website tests, contract/static gates,
-13 website browser tests and eight retained-portal tests. Real Google/editor
-acceptance is NOT RUN. See the backend-owned
-[execution result](../../../MisAttribution/docs/editorial/STEP_D_EXECUTION_RESULT.md)
-and [additional policy plan](../../../MisAttribution/docs/editorial/STEP_D_POLICY_EXCEPTION_PLAN.md).
-Documentation-only follow-up commits preserve the frozen candidate pin/artifact
-identities; use clean paired checkouts of the release commits when resuming.
-Earlier checkpoints below remain historical.
-
-The current pin includes the narrow Firebase discovery correction: human-only
-workers do not declare an unused OpenAI secret. Contract exports, browser behavior
-and approved Staging scope are unchanged. The first backend attempt applied IAM
-and indexes, then stopped before any function updates; no secret was provided.
-The corrected source pair requires fresh sealed-pair gates before retry.
+The first Hosting attempt stopped before upload because Firebase generated an
+unignored debug log. The committed `.gitignore` correction preserves all deployment
+assertions; 115 tests and explicit dirty-source regression checks passed. Application
+bytes are unchanged. Website main remains `6686514`; Production and public Pages
+publication remain blocked. Dave/Jill real sign-ins and staff workflow acceptance
+remain pending, and trusted-content tests remain blocked. See the backend-owned
+[execution result](../../../MisAttribution/docs/editorial/STEP_D_EXECUTION_RESULT.md).
+Documentation follow-ups do not change the deployed source pair. Earlier checkpoints
+below are historical; parent coordination documents remain unversioned.
 
 ## Gate A authorized — October 11 UTC
 
