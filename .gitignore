@@ -6,3 +6,6 @@ editorial-app/test-results/
 editorial-app/playwright-report/
 .env*
 .firebase-editorial-staging.generated.json
+/.firebase/
+/firebase-debug.log
+/firebase-debug.*.log
