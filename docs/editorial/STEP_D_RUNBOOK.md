@@ -13,8 +13,10 @@ The first Hosting attempt stopped before upload because Firebase generated an
 unignored debug log. The committed `.gitignore` correction preserves all deployment
 assertions; 115 tests and explicit dirty-source regression checks passed. Application
 bytes are unchanged. Website main remains `6686514`; Production and public Pages
-publication remain blocked. Dave/Jill real sign-ins and staff workflow acceptance
-remain pending, and trusted-content tests remain blocked. See the backend-owned
+publication remain blocked. Dave completed real Google sign-in and the approved
+Staging administrator/moderator grant on October 13. Jill's independent sign-in,
+broader staff workflow acceptance and trusted-content tests remain pending or
+blocked. See the backend-owned
 [execution result](../../../MisAttribution/docs/editorial/STEP_D_EXECUTION_RESULT.md).
 Documentation follow-ups do not change the deployed source pair. Earlier checkpoints
 below are historical; parent coordination documents remain unversioned.
@@ -24,6 +26,49 @@ For any future publication, capture the actual current Hosting release; the orig
 `previousHostingRelease: null` first-release plan must not be reused. Keep Firebase's
 root debug logs and `.firebase/` cache excluded from Git; they are private generated
 operator output, never deployment artifacts. Tracked/untracked source remains guarded.
+
+## Jill's Staging sign-in — after Dave's access check
+
+Dave's sign-in and server-assigned access have been verified. Jill should use her
+own Google account; her exact address has not yet been supplied or granted access.
+
+1. Tell Dave the exact Google email address you intend to use. Use your own browser
+   profile. If sharing Dave's browser, first click **Sign out** in the portal.
+2. Open [Staging Editorial](https://misattr-editorial-staging.web.app/misattribution/editorial/).
+   The address ends in `/editorial/` with no comma or period after it. Confirm the
+   page says **STAGING / BETA** and **misattribution-staging**.
+3. Click **Sign in with Google** and select your own account. If it is absent,
+   choose **Use another account**. Complete passwords and MFA only in Google's
+   window. If a popup is blocked, allow popups for this Staging site and retry.
+4. Confirm your own name/email appears in the portal header. On the first visit,
+   **Your Google account is authenticated, but it does not have editorial access.**
+   is expected. Tell Dave the email you used, that you completed sign-in, and the
+   message displayed. Do not send passwords, codes or tokens.
+5. Wait for the release operator to verify your real Staging Google identity and
+   apply the already-approved access. Then click **Check access again** (or refresh).
+   Open **Access and policy** and confirm **editor, moderator, admin**. The backend
+   revision should be `84004aee0066f574c6dfed4fb325f32aa61f5750` and contract
+   `editorial-v2` for this release.
+6. Check that **Overview**, **Puzzles**, **Community moderation**, **Abuse and
+   restrictions**, **Audit history**, and **Access and policy** are visible. For this
+   sign-in check, leave content and decisions unchanged. Publication/provider
+   controls remain disabled, and an empty queue is not a completed workflow test.
+7. Click **Sign out** and confirm the workspace and your account details disappear.
+   Sign in with your own account again, then report completion or the exact error.
+
+Jill does not need Firebase CLI, Cloud Console, organization-policy access or an
+administrator IAM role. The earlier temporary organization-policy exception is
+closed and is not part of staff onboarding. Do not reopen it for this procedure.
+
+The release operator must independently verify Jill's supplied email, enabled and
+verified Google identity, fresh real sign-in, exact Staging UID and current access
+revision. Use the backend's existing audited operator for the approved
+`editorialAdmin`, active, `communityModerator: true` grant; retain the private plan,
+dry-run/apply/readback and immutable audit evidence. Never reuse Dave's UID or his
+grant request. The browser cannot assign staff permissions. Backend
+[operations](../../../MisAttribution/docs/editorial/STEP_D_OPERATIONS.md) owns access
+and recovery; [execution evidence](../../../MisAttribution/docs/editorial/STEP_D_EXECUTION_RESULT.md)
+records each person's completion separately. CLI login is not app sign-in evidence.
 
 ## Before any publication
 

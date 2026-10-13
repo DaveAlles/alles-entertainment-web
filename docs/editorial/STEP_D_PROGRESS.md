@@ -13,8 +13,14 @@ The first Hosting attempt stopped before upload because Firebase generated an
 unignored debug log. The committed `.gitignore` correction preserves all deployment
 assertions; 115 tests and explicit dirty-source regression checks passed. Application
 bytes are unchanged. Website main remains `6686514`; Production and public Pages
-publication remain blocked. Dave/Jill real sign-ins and staff workflow acceptance
-remain pending, and trusted-content tests remain blocked. See the backend-owned
+publication remain blocked. On October 13, Dave completed real Google sign-in in
+Safari and received the approved Staging administrator/moderator grant. The portal
+verified editor/moderator/admin capabilities, exact backend/contract/epoch identity,
+refresh restoration and protected-state clearing on sign-out. His restored session
+and read-only overview loaded successfully. Jill's identity/grant and broader staff
+workflow acceptance remain pending; trusted-content tests remain blocked. Follow
+[Jill's sign-in instructions](STEP_D_RUNBOOK.md#jills-staging-sign-in--after-daves-access-check).
+See the backend-owned
 [execution result](../../../MisAttribution/docs/editorial/STEP_D_EXECUTION_RESULT.md).
 Documentation follow-ups do not change the deployed source pair. Earlier checkpoints
 below are historical; parent coordination documents remain unversioned.
