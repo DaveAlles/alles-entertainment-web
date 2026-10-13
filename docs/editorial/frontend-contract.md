@@ -125,6 +125,10 @@ drafts remain until the editor deliberately reloads. Unknown outcomes block new
 actions, require successful current-state reconciliation, then offer deliberate
 retrieval using the exact original request/ID. An accepted receipt remains accepted
 when its subsequent refresh fails. Refresh and receipt errors stay visible.
+The backend's `VIOLATION_EXISTS` reason uses violation-specific duplicate copy;
+it retains the existing `exists` reload requirement and never retries the mutation
+automatically. Puzzle-override duplicate messages remain unchanged. Error copy is
+frontend-owned and does not display raw server messages.
 
 Google popup is compatible with static hosting; keep the configured Firebase
 `project.firebaseapp.com` authDomain, whose hosted handler the SDK needs. Adding the

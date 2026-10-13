@@ -29,6 +29,34 @@ records individual outcomes, the duplicate-violation error-copy defect and limit
 Documentation follow-ups do not change the deployed source pair. Earlier checkpoints
 below are historical; parent coordination documents remain unversioned.
 
+## Duplicate-violation message fix — October 13
+
+**Source fix and local acceptance complete; not deployed.** The existing backend
+`VIOLATION_EXISTS` reason now displays: “A violation is already recorded for this
+decision and category. Reload the latest state.” The reload requirement remains
+in place, the mutation is not retried automatically, and raw server messages stay
+hidden. Puzzle-override duplicate copy is unchanged. The regression test reproduced
+the old override message before the fix and passes with the corrected copy.
+
+Validation passed: typecheck, lint, 112 unit/component tests, four release-guard
+tests, unchanged contract parity against backend
+`84004aee0066f574c6dfed4fb325f32aa61f5750`, all eight backend Editorial emulator
+groups, and 13 website browser tests. Deterministic local/Staging/Production builds
+and artifact rejection gates passed locally; no environment was published.
+
+The emulator wrapper initially stopped before tests because it assumed a backend
+checkout's `.git` was a directory. The disposable candidate's Git pointer was
+corrected, and available Java 21 and the pinned Playwright browser were supplied
+after stale temporary dependency paths also blocked startup. The same full demo
+integration/browser command then passed; no versioned harness or backend source
+changed. Private follow-up evidence is under
+`.operations/step-d/duplicate-violation-2026-10-13/`.
+
+This fix is scoped to `codex/editorial-step-c`. The deployed Staging pair above
+still contains the old message until a guarded Staging publication occurs.
+Production and website-main publication remain blocked; Jill's acceptance and
+the previously recorded live-content limits remain pending.
+
 ## Gate A authorized — October 11 UTC
 
 The owner approved the documented bounded Staging deployment, exact source sealing

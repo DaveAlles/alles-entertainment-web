@@ -44,7 +44,11 @@ export class PortalError extends Error {
     public reason?: string,
     public field?: string,
   ) {
-    super(messages[kind]);
+    super(
+      kind === "exists" && reason === "VIOLATION_EXISTS"
+        ? "A violation is already recorded for this decision and category. Reload the latest state."
+        : messages[kind],
+    );
   }
 }
 export function apiError(error: unknown): PortalError {

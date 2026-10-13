@@ -259,6 +259,27 @@ it("failed reconciliation cannot enable an uncertain mutation receipt retry", as
   expect(screen.getByText("Retrieve original receipt")).toBeDisabled();
   expect(execute).toHaveBeenCalledTimes(1);
 });
+it("a duplicate violation explains the decision conflict and requires reload without retrying", async () => {
+  const execute = vi.fn().mockRejectedValue({
+      code: "functions/already-exists",
+      details: { reason: "VIOLATION_EXISTS" },
+      message: "private server detail",
+    }),
+    reconcile = vi.fn(async () => {});
+  render(<CommandHarness execute={execute} reconcile={reconcile} />);
+  await userEvent.click(screen.getByText("Prepare action"));
+  await userEvent.click(screen.getByText("Confirm action"));
+  await screen.findByText(
+    "A violation is already recorded for this decision and category. Reload the latest state.",
+  );
+  expect(screen.queryByText(/override was added|private server detail/)).toBeNull();
+  expect(screen.getByText("Prepare action")).toBeDisabled();
+  expect(execute).toHaveBeenCalledTimes(1);
+  await userEvent.click(screen.getByText("Reload current state"));
+  await waitFor(() => expect(screen.getByText("Prepare action")).toBeEnabled());
+  expect(reconcile).toHaveBeenCalledTimes(1);
+  expect(execute).toHaveBeenCalledTimes(1);
+});
 it("an acknowledged mutation stays accepted if the following read reports a missing case", async () => {
   render(
     <CommandHarness
