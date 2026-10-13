@@ -6,7 +6,8 @@ Initial public website for **Alles Entertainment LLC**, an independent game stud
 
 [Step D progress](docs/editorial/STEP_D_PROGRESS.md) records the approved, deployed
 Staging pair and bounded live acceptance. Dave's real Google administrator/moderator
-session is verified; Jill and remaining release gates are pending. See the
+session is verified; Jill's independently verified grant and reported browser
+checks also pass. Remaining release gates stay blocked. See the
 [release runbook](docs/editorial/STEP_D_RUNBOOK.md). Production and website-main
 publication remain blocked.
 

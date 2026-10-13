@@ -6,7 +6,8 @@ The approved Staging pair is deployed and served artifacts are verified. Dave's
 real Google session and approved capabilities pass; bounded moderation/recovery
 acceptance is recorded in the backend's
 [October 13 report](../../../MisAttribution/docs/editorial/STEP_D_BOUNDED_ACCEPTANCE.md).
-Jill and other release gates remain pending. Production and website-main publication
+Jill's independent identity/grant verification and her reported browser checks pass.
+Other release gates remain pending. Production and website-main publication
 remain blocked.
 
 The canonical frontend is [editorial-app](../../editorial-app/). The old

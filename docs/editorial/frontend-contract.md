@@ -2,7 +2,8 @@
 
 Current verification: [Step D progress](STEP_D_PROGRESS.md) and the
 [runbook](STEP_D_RUNBOOK.md) record the deployed Staging pair, served artifacts and
-live acceptance. Dave's real Google session is verified; Jill and remaining release
+live acceptance. Dave's real Google session is verified; Jill's independent grant
+verification and reported browser checks pass. Remaining release
 gates are pending. Production and website-main publication remain blocked.
 Historical local evidence remains in [sync acceptance](SYNC_ACCEPTANCE.md),
 [Step C](STEP_C_PROGRESS.md) and the [Step D handoff](STEP_D_HANDOFF.md).

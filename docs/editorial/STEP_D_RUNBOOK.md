@@ -1,21 +1,27 @@
 # Website release runbook — Staging deployed, acceptance pending
 
-## Current execution — Staging published; real-editor acceptance pending
+## Current execution — Staging published; broader acceptance blocked
 
 [Staging Editorial](https://misattr-editorial-staging.web.app/misattribution/editorial/)
-is deployed from website `6dcae9fbc548b8d52a132643a27697a0c7037604` with backend `84004aee0066f574c6dfed4fb325f32aa61f5750`.
-Bundle `b43077c7cdb7f3f0daa81a9322b33fed077d21e9b5069b3853a498ed529d35f8` is verified against served files. Real signed-out browser checks
+is deployed from website `77efc07c58a557b1b555264ffe2359610e660b07` with backend `84004aee0066f574c6dfed4fb325f32aa61f5750`.
+Bundle `e555cf8cc243f960de280120ff0ee850b140094299eb7771487ca837bef424bc` is verified against served files after the separately approved October 13 Hosting correction. Real signed-out browser checks
 pass for desktop/mobile, hash refresh, headers and 404 handling. Backend attestation
 and all 46 authentication denials pass. The temporary policy exception is restored
 and temporary administrator access removed; both approved new jobs are enabled.
+
+The original release history below remains dated evidence. The
+[October 13 correction record](STEP_D_FRONTEND_CORRECTION.md) owns the current
+frontend artifact, successful guarded publication and post-deploy checks.
 
 The first Hosting attempt stopped before upload because Firebase generated an
 unignored debug log. The committed `.gitignore` correction preserves all deployment
 assertions; 115 tests and explicit dirty-source regression checks passed. Application
 bytes are unchanged. Website main remains `6686514`; Production and public Pages
 publication remain blocked. Dave completed real Google sign-in and the approved
-Staging administrator/moderator grant on October 13. Jill's independent sign-in,
-broader staff workflow acceptance and trusted-content tests remain pending or
+Staging administrator/moderator grant on October 13. Jill's independent Google
+identity and approved grant are verified; her post-grant browser checks passed
+according to her exact report relayed by Dave. Broader workflow and trusted-content
+acceptance remain pending or
 blocked. See the backend-owned
 [execution result](../../../MisAttribution/docs/editorial/STEP_D_EXECUTION_RESULT.md).
 October 13 bounded moderation/recovery checks now pass; audit pagination and
@@ -33,8 +39,14 @@ operator output, never deployment artifacts. Tracked/untracked source remains gu
 
 ## Jill's Staging sign-in — after Dave's access check
 
-Dave's sign-in and server-assigned access have been verified. Jill should use her
-own Google account; her exact address has not yet been supplied or granted access.
+Dave's sign-in and server-assigned access have been verified. On October 13 Jill
+completed steps 1–4 using her own Google account. The operator independently
+verified her identity and applied/read back her approved administrator/moderator
+grant with its immutable audit. **Jill completed steps 5–7 successfully**, according
+to her exact report relayed by Dave: editor/moderator/admin capabilities, read-only
+navigation, protected-state clearing on sign-out and restored sign-in all passed.
+These are human-reported outcomes, not an agent-observed recording. Keep the
+procedure below for later verification; Jill does not need to repeat it now.
 
 1. Tell Dave the exact Google email address you intend to use. Use your own browser
    profile. If sharing Dave's browser, first click **Sign out** in the portal.

@@ -1,13 +1,17 @@
 # Step D website acceptance
 
-## Current execution — Staging published; real-editor acceptance pending
+## Current execution — Staging published; broader acceptance blocked
 
 [Staging Editorial](https://misattr-editorial-staging.web.app/misattribution/editorial/)
-is deployed from website `6dcae9fbc548b8d52a132643a27697a0c7037604` with backend `84004aee0066f574c6dfed4fb325f32aa61f5750`.
-Bundle `b43077c7cdb7f3f0daa81a9322b33fed077d21e9b5069b3853a498ed529d35f8` is verified against served files. Real signed-out browser checks
+is deployed from website `77efc07c58a557b1b555264ffe2359610e660b07` with backend `84004aee0066f574c6dfed4fb325f32aa61f5750`.
+Bundle `e555cf8cc243f960de280120ff0ee850b140094299eb7771487ca837bef424bc` is verified against served files after the separately approved October 13 Hosting correction. Real signed-out browser checks
 pass for desktop/mobile, hash refresh, headers and 404 handling. Backend attestation
 and all 46 authentication denials pass. The temporary policy exception is restored
 and temporary administrator access removed; both approved new jobs are enabled.
+
+The original release history below remains dated evidence. The
+[October 13 correction record](STEP_D_FRONTEND_CORRECTION.md) owns the current
+frontend artifact, successful guarded publication and post-deploy checks.
 
 The first Hosting attempt stopped before upload because Firebase generated an
 unignored debug log. The committed `.gitignore` correction preserves all deployment
@@ -17,8 +21,11 @@ publication remain blocked. On October 13, Dave completed real Google sign-in in
 Safari and received the approved Staging administrator/moderator grant. The portal
 verified editor/moderator/admin capabilities, exact backend/contract/epoch identity,
 refresh restoration and protected-state clearing on sign-out. His restored session
-and read-only overview loaded successfully. Jill's identity/grant and broader staff
-workflow acceptance remain pending; trusted-content tests remain blocked. Follow
+and read-only overview loaded successfully. Jill's independent Google identity and
+approved administrator/moderator grant were verified at 21:33 UTC on October 13,
+including matching immutable access audit. Her post-grant capabilities, navigation,
+sign-out clearing and restored sign-in passed according to her exact report relayed
+by Dave. Broader workflow acceptance and trusted-content gates remain blocked. Follow
 [Jill's sign-in instructions](STEP_D_RUNBOOK.md#jills-staging-sign-in--after-daves-access-check).
 See the backend-owned
 [execution result](../../../MisAttribution/docs/editorial/STEP_D_EXECUTION_RESULT.md).
@@ -31,7 +38,7 @@ below are historical; parent coordination documents remain unversioned.
 
 ## Duplicate-violation message fix — October 13
 
-**Source fix and local acceptance complete; not deployed.** The existing backend
+**Source fix, local acceptance and approved Staging Hosting correction complete.** The existing backend
 `VIOLATION_EXISTS` reason now displays: “A violation is already recorded for this
 decision and category. Reload the latest state.” The reload requirement remains
 in place, the mutation is not retried automatically, and raw server messages stay
@@ -42,7 +49,8 @@ Validation passed: typecheck, lint, 112 unit/component tests, four release-guard
 tests, unchanged contract parity against backend
 `84004aee0066f574c6dfed4fb325f32aa61f5750`, all eight backend Editorial emulator
 groups, and 13 website browser tests. Deterministic local/Staging/Production builds
-and artifact rejection gates passed locally; no environment was published.
+and artifact rejection gates passed locally before the separately approved Hosting
+correction below.
 
 The emulator wrapper initially stopped before tests because it assumed a backend
 checkout's `.git` was a directory. The disposable candidate's Git pointer was
@@ -52,8 +60,11 @@ integration/browser command then passed; no versioned harness or backend source
 changed. Private follow-up evidence is under
 `.operations/step-d/duplicate-violation-2026-10-13/`.
 
-This fix is scoped to `codex/editorial-step-c`. The deployed Staging pair above
-still contains the old message until a guarded Staging publication occurs.
+The source remains on `codex/editorial-step-c`. The owner approved a narrow Hosting
+allowance extension, and the [correction](STEP_D_FRONTEND_CORRECTION.md) was published
+at 21:55 UTC with verified served files. Signed-out desktop/mobile checks and
+Dave's refreshed authenticated read-only overview/capabilities pass. The duplicate
+mutation was not repeated live; its component regression and served bytes pass.
 Production and website-main publication remain blocked; Jill's acceptance and
 the previously recorded live-content limits remain pending.
 
