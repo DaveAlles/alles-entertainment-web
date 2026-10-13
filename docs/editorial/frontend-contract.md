@@ -1,14 +1,11 @@
 # Editorial frontend contract
 
-Current verification: [Step D progress](STEP_D_PROGRESS.md) and
-[release manifest](STEP_D_RELEASE_MANIFEST.json). The existing contract/source pair
-passed fresh local gates. The guarded website-owned Staging deployment/predeploy path is implemented locally;
-publication and live acceptance await approval. The [runbook](STEP_D_RUNBOOK.md)
-records exact-pair/attestation/served-artifact requirements and delivery ownership.
-
-Status: implemented locally in Step C, October 10, 2026; undeployed. See the
-[current sync acceptance](SYNC_ACCEPTANCE.md), [original Step C record](STEP_C_PROGRESS.md)
-and [Step D handoff](STEP_D_HANDOFF.md).
+Current verification: [Step D progress](STEP_D_PROGRESS.md) and the
+[runbook](STEP_D_RUNBOOK.md) record the deployed Staging pair, served artifacts and
+live acceptance. Dave's real Google session is verified; Jill and remaining release
+gates are pending. Production and website-main publication remain blocked.
+Historical local evidence remains in [sync acceptance](SYNC_ACCEPTANCE.md),
+[Step C](STEP_C_PROGRESS.md) and the [Step D handoff](STEP_D_HANDOFF.md).
 This document owns browser behavior, packaging and testing. API semantics remain
 in MisAttribution's [backend contract](../../../MisAttribution/docs/editorial/backend-contract.md)
 and normative [Step B amendments](../../../MisAttribution/docs/editorial/STEP_B_CONTRACT.md).

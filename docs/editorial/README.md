@@ -2,15 +2,16 @@
 
 Current checkpoint: [Step D progress](STEP_D_PROGRESS.md),
 [release manifest](STEP_D_RELEASE_MANIFEST.json) and [website runbook](STEP_D_RUNBOOK.md).
-The reconciled pair passed local acceptance; authenticated discovery is now complete.
-Website-owned guarded Staging release tooling is prepared locally and awaits
-approval, final sealing and integration. Deployment and real-user acceptance remain
-unrun. No live site/configuration change occurred.
+The approved Staging pair is deployed and served artifacts are verified. Dave's
+real Google session and approved capabilities pass; bounded moderation/recovery
+acceptance is recorded in the backend's
+[October 13 report](../../../MisAttribution/docs/editorial/STEP_D_BOUNDED_ACCEPTANCE.md).
+Jill and other release gates remain pending. Production and website-main publication
+remain blocked.
 
-The intended canonical frontend is now [editorial-app](../../editorial-app/).
-Step C migrates and extends the existing backend-owned React portal. The old
-portal remains intact for regression checks and rollback until Step D cutover.
-Step C passes local acceptance. Nothing here has been deployed.
+The canonical frontend is [editorial-app](../../editorial-app/). The old
+backend portal remains intact for regression checks and rollback; retirement
+requires separate authorization.
 
 - [Frontend contract](frontend-contract.md): source, routes, auth, workflows and commands.
 - [Step C acceptance](STEP_C_PROGRESS.md): inspected baseline, fresh checks and limits.

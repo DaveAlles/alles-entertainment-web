@@ -4,17 +4,18 @@ Initial public website for **Alles Entertainment LLC**, an independent game stud
 
 ## Editorial application
 
-[Step D progress](docs/editorial/STEP_D_PROGRESS.md) records fresh local acceptance
-for the historical committed source pair and current uncommitted release tooling.
-Authenticated live inventory and Pages discovery are now complete; the concrete
-Staging scope awaits approval. The initial live Editorial route check returned 404. See the
-[release runbook](docs/editorial/STEP_D_RUNBOOK.md). No publication occurred.
+[Step D progress](docs/editorial/STEP_D_PROGRESS.md) records the approved, deployed
+Staging pair and bounded live acceptance. Dave's real Google administrator/moderator
+session is verified; Jill and remaining release gates are pending. See the
+[release runbook](docs/editorial/STEP_D_RUNBOOK.md). Production and website-main
+publication remain blocked.
 
 The migrated React Editorial frontend is in `editorial-app/`. It builds at
 `/misattribution/editorial/` inside an allowlisted complete static-site artifact.
 The public pages remain static and unchanged. Start at
 [Editorial documentation](docs/editorial/README.md) for setup, local acceptance
-and the separately authorized Step D handoff. No frontend or backend was deployed.
+and the separately authorized Step D handoff. The retained backend portal has not
+been retired.
 
 ## Contents
 

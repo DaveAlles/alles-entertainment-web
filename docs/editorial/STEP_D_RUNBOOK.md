@@ -18,6 +18,10 @@ Staging administrator/moderator grant on October 13. Jill's independent sign-in,
 broader staff workflow acceptance and trusted-content tests remain pending or
 blocked. See the backend-owned
 [execution result](../../../MisAttribution/docs/editorial/STEP_D_EXECUTION_RESULT.md).
+October 13 bounded moderation/recovery checks now pass; audit pagination and
+fixture cleanup also pass, with test accounts/content removed and audits retained. The backend-owned
+[bounded acceptance report](../../../MisAttribution/docs/editorial/STEP_D_BOUNDED_ACCEPTANCE.md)
+records individual outcomes, the duplicate-violation error-copy defect and limits.
 Documentation follow-ups do not change the deployed source pair. Earlier checkpoints
 below are historical; parent coordination documents remain unversioned.
 
