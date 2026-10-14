@@ -29,7 +29,7 @@ work. Do not develop two permanent frontends.
 ## Contract and environment
 
 `editorial-app/backend-pin.json` pins the reviewed backend commit
-`84004aee0066f574c6dfed4fb325f32aa61f5750`, `editorial-v2` and digest
+`71d29b2ca92c33be2bd8f24deee881b3edce1eda`, `editorial-v2` and digest
 `2f58c00871da4579f30cb471867a00ce1196db7289406d7a71570dd1459a91d0`.
 The three byte-identical approved browser exports and manifest are in
 `src/contract/`. The export generation-base SHA is not the containing backend SHA.
@@ -59,6 +59,19 @@ Local uses only demo-misattribution and fixed loopback ports. Staging targets
 misattribution-staging; Production targets misattribution-aa1e2. No query or browser
 storage override exists, and there is no fallback between projects. Every screen,
 including sign-in, displays environment and project. Authorized screens show epoch.
+
+## Pending identity quarantine integration
+
+The backend's [local identity-quarantine implementation](../../../MisAttribution/docs/editorial/STEP_D_IDENTITY_QUARANTINE.md)
+restricts speaker search to reviewed identities without changing response shapes.
+The browser must accept an empty result and continue treating blocked previews
+as unavailable. It must not expose a browser control that grants identity trust.
+This follow-up is not deployed and does not update the current backend pin.
+The conditional catalog repair is approved; the exact [quarantine release plan](../../../MisAttribution/docs/editorial/STEP_D_QUARANTINE_RELEASE_PLAN.md)
+requests separate Git, provider-check and deployment approval.
+A separately approved backend/ingestion release requires a matching Staging
+frontend pin and pair acceptance. Production and website-main publication remain
+blocked.
 
 ## Static route and artifact
 
