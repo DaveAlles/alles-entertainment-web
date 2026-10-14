@@ -29,7 +29,7 @@ work. Do not develop two permanent frontends.
 ## Contract and environment
 
 `editorial-app/backend-pin.json` pins the reviewed backend commit
-`71d29b2ca92c33be2bd8f24deee881b3edce1eda`, `editorial-v2` and digest
+`3d92df74d33cef2afe5a40a7111c4e80ca73cc42`, `editorial-v2` and digest
 `2f58c00871da4579f30cb471867a00ce1196db7289406d7a71570dd1459a91d0`.
 The three byte-identical approved browser exports and manifest are in
 `src/contract/`. The export generation-base SHA is not the containing backend SHA.
@@ -59,6 +59,20 @@ Local uses only demo-misattribution and fixed loopback ports. Staging targets
 misattribution-staging; Production targets misattribution-aa1e2. No query or browser
 storage override exists, and there is no fallback between projects. Every screen,
 including sign-in, displays environment and project. Authorized screens show epoch.
+
+## Revised quarantine plan — approval pending
+
+The [revision-2 Staging plan](../../../MisAttribution/docs/editorial/STEP_D_QUARANTINE_RELEASE_PLAN_V2.md)
+reconciles backend base `bc5249fc95125bda3b141191b9df44afef4e1593` and catalog drift.
+The original 8:10 p.m. attempt stopped without deployment. Server runtime and
+browser export bytes remain unchanged from the identity-quarantine candidate.
+Local pair tests use that real committed base; this source tree retains its prior
+pin until a newly approved backend commit exists. After approval, use the existing
+contract sync to pin that final commit, commit only this contract/pin on the
+feature branch, rebuild and verify the exact Staging artifact. Local build bytes
+from the uncommitted test pair are validation evidence, not an approved release
+artifact. No UI behavior or public site file changes are proposed. Production and
+website-main remain blocked.
 
 ## Pending identity quarantine integration
 
