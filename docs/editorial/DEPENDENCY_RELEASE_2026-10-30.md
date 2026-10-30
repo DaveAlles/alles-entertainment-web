@@ -11,7 +11,7 @@ Canonical frontend updates: Playwright 1.64.1, user-event 14.6.8, Node 22 types
 112 frontend + 4 release-script tests pass; the npm audit is clean.
 
 The standard contract sync binds backend
-`dc7b2f3549d0b5c0e6e0b24d9a2e43d8f16e2441`, containing dependency/toolchain updates
+`34c6fd9735a45e78f4396cbb05a02ed5692da1f8`, containing dependency/toolchain updates
 on backend base `1735920`. Contract bytes and digest remain unchanged. See
 [backend maintenance](../../../MisAttribution/docs/DEPENDENCY_MAINTENANCE_2026-10-30.md)
 for scope, security limits and the isolated backend's 893-test aggregate result.
@@ -27,3 +27,6 @@ remote parity and deployment outcome are recorded privately in the backend's
 The release prerequisite also corrects the shared backend synthetic acceptance
 fixture: reviewed human metadata and an explicit Ada/Countess canonical alias.
 It grants no quote trust and changes no retained-portal file or runtime policy.
+
+The common positive catalog helper also supplies reviewed human metadata for the
+second retained browser specification; explicit negative identity fixtures remain.
