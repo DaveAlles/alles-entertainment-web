@@ -30,3 +30,8 @@ source, synthetic tests and public-safe engineering guidance. The assembled site
 contains only the original public files and the compiled Editorial application.
 Sibling links are for the local coordination workspace; CI needs no private repo.
 Parent documents remain outside Git. No preservation migration was authorized.
+
+The [validation-only workflow](../../.github/workflows/editorial-validation.yml)
+runs on pushes to `codex/editorial-step-c`, pull requests and manual dispatch.
+It checks the frontend and builds static artifacts with read-only repository
+permissions; it has no deployment job and does not publish website `main`.

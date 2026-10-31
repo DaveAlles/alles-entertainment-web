@@ -1,5 +1,7 @@
 name: Editorial validation (no deployment)
 on:
+  push:
+    branches: [codex/editorial-step-c]
   pull_request:
   workflow_dispatch:
 permissions:
