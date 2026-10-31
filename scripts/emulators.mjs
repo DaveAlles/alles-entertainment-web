@@ -115,7 +115,12 @@ substitutions.push({
 });
 fs.writeFileSync(
   path.join(target, ".git"),
-  "gitdir: " + path.join(backend, ".git") + "\n",
+  "gitdir: " +
+    execFileSync("git", ["rev-parse", "--absolute-git-dir"], {
+      cwd: backend,
+      encoding: "utf8",
+    }).trim() +
+    "\n",
 );
 const evidence = path.join(root, ".operations/step-c");
 fs.mkdirSync(evidence, { recursive: true });
